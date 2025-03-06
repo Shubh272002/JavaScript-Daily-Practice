@@ -1,0 +1,42 @@
+<script>
+var hindi,eng,math,science,sst,drawing,computer,per,total;
+
+
+hindi= Number(prompt("hindi"));
+eng= Number(prompt("eng"));
+math= Number(prompt("math"));
+science= Number(prompt("science"));
+sst= Number(prompt("sst"));
+drawing= Number(prompt("drawing"));
+computer= Number(prompt("computer"));
+
+total= (hindi+eng+math+science+sst+drawing+computer);
+
+per= total*100/800;
+
+
+    if(per<450){
+        msg= " A Grade"
+    }
+    else if(per<400){
+        msg= "B Grade"
+    }
+    else if(per<300){
+        msg= "C Grade"
+    }
+    else{
+        msg="D Grade"
+    }
+document.write(`<p><b>Hindi:-</b>${hindi}</p>`);
+document.write(`<p><b>Eng:-</b>${eng}</p>`);
+document.write(`<p><b>Math:-</b>${math}</p>`);
+document.write(`<p><b>Science:-</b>${science}</p>`);
+document.write(`<p><b>Sst:-</b>${sst}</p>`);
+document.write(`<p><b>Drawing:-</b>${drawing}</p>`);
+document.write(`<p><b>Computer:-</b>${computer}</p>`);
+document.write(`<p><b>total:-</b>${total}</p>`);
+document.write(`<p><b>Per%:-</b>${per}</p>`);
+document.write(`<p><b>Grade:-</b>${msg}</p>`);
+
+</script>
+

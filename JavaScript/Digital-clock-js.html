@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CLock</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+        p{
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h2>Digital Clock</h2>
+        <p id="w"></p>
+
+    </div>
+
+    <script>
+        function DigitalClock(){
+            var time,h,m,dt,mn,day,year,clock;
+            time=new Date();
+            h=time.getHours();
+            m=time.getMinutes();
+            s = time.getSeconds();
+            dt = time.getDate();
+            year = time.getFullYear(); 
+            var zone =h<12?"AM":"PM";
+
+
+
+
+            // arrayreturn
+
+            var month = ["Jan","fab"];
+            var days= ["Sun","Mon"];
+            mn = month[time.getMonth()];
+            day= days[time.getDay()];
+
+            
+            
+ 
+
+            clock = document.getElementById("w");
+            clock.innerHTML=`${h}:${m}:${s}${zone}<br>${day} ${dt} ${mn} ${year}  `
+
+            setTimeout(DigitalClock);
+        }
+
+        DigitalClock(); 
+    </script>
+    
+</body>
+</html>

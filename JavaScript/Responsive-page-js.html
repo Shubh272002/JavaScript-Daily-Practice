@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:calibri;
+        }
+        header{
+            width: 100%;
+            background: black;
+            padding: 5px 5%;
+            color: white;
+        }
+        .row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .webname{
+            width: 20%;
+            font-size: 2em;
+        }
+        .drop{
+            width:80%;
+            text-align: right;
+            position: relative;
+            top: 7px;
+            display: none;
+        }
+        nav{
+            width: 80%;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        nav ul li{
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: cneter;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .show{
+            display: block;
+        }
+
+        @media screen and  (max-width:576px){
+
+            .webname{
+                padding:5px 5% ;
+            }
+            .drop{
+                display: block;
+                padding: 5px 5%;
+                cursor: pointer;
+            }
+            header{
+                height: 50px;
+                padding: 0;
+            }
+            nav{
+                width: 100%;
+                background: brown;
+                display: none;
+            }
+            nav ul li{
+                width: 100px;
+                background: red;
+                border-bottom: 1px solid white   ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="webname"> Tech Vidya</div>
+            <div class="drop" onclick="showMenu()"> &#9776</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="">About</a>
+                    </li>
+
+                    <li>
+                        <a href="">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="">Event</a>
+                    </li>
+
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function showMenu(){
+            document.getElementsByTagName("nav")[0].classList.toggle("show")
+        }
+    </script>
+</body>
+</html>

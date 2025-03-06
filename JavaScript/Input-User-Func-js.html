@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter Your Name" id="user" > <button onclick="abc()"> Get Name</button>
+
+    <h2>User Name:- <span id="s">Shubh Verma</span></h2>
+
+    <script>
+
+        function abc(){
+            var user = document.getElementById("user").value;
+            var data  = document.getElementById("s");
+            data.innerHTML= document.getElementById("user").value;
+        }
+    </script>
+    
+</body>
+</html>

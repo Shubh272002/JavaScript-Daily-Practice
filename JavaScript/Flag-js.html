@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Concept </title>
+    <script src="flag-data.js"></script>
+</head>
+<body>
+    <h1>Search By Id</h1>
+    <input type="text" placeholder="Enter Your Id" id="user_id">
+    <button onclick="searchUser()">Search</button>
+
+    <script>
+
+        function searchUser(){
+            var user_id = document.getElementById("user_id").value;
+          var status=false;
+            for(var uid in userid){
+                if(userid[uid]==user_id){
+                   status= true;
+                }
+               
+                
+            }
+            if(status){
+                alert("Right User Id :");
+            }
+            else{
+                alert("Wrong User Id")
+            }
+        }
+    </script>
+</body>
+</html>

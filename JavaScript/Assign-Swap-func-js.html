@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Swap Name</title>
+    
+    <style>
+        *{
+            font-family: calibri;
+        }
+        h2{
+          text-align:center ;
+          padding: 20px;
+          background: maroon;
+          color:#ffff;
+        }
+        .swap{
+          margin: auto;
+          text-align: center;
+          border: 2px solid rgb(85, 6, 6);
+          width: 40%;
+          padding: 25px;
+        }
+        button{
+          background: orange;
+          font-weight: bold;
+          border: none;
+          color: maroon;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Swap First And Last Name  :-</h2><br>
+    <div class="swap">
+    <label><b>First Name:-</b></label><br>
+    <input  type="text" id="first" placeholder="Enter Your First Name"><br>
+    <label><b>Last Name:-</b></label><br>
+    <input type="text" id="second" placeholder="Enter Your Last Name"><br><br><br>
+    <button  onclick="swap()">Swap</button><br><br>
+    <label><b>First Name:-</b></label><br>
+    <input type="text"  id="ans1"><br>
+    <label><b>Last Name:-</b></label><br>
+    <input type="text" id="ans2">
+  </div>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+  function swap(){
+    var fn = " ";
+    var ln = " ";
+    var am = " ";
+    fn= String(document.getElementById('first').value);
+    ln= String(document.getElementById('second').value);
+
+    am=fn;
+    fn=ln;
+    ln=am;
+    document.getElementById('ans1').value=fn;
+    document.getElementById('ans2').value=ln;
+  }
+  </script>

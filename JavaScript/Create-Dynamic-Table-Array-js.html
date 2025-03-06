@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dynamic table Use of the array </title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1" width="50%" align="center">
+        <tr>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Desig</th>
+            <th>Salary</th>
+            <th>Month</th>
+        </tr>
+
+        <script>
+            var user = ["Shubh","Goutam","Shubh","Goutam","Shubh","Goutam","Shubh","Goutam","Shubh","Goutam","Shubh","Goutam"];
+            var dept = ["Sales","IT","Sales","IT","Sales","IT","Sales","IT","Sales","IT","Sales","IT","Sales","IT"];
+            var desig = ["Manager","Test Engineer","Manager","Test Engineer","Manager","Test Engineer","Manager","Test Engineer","Manager","Test Engineer","Manager","Test Engineer"];
+            var salary = [45000,70000,45000,70000,45000,70000,45000,70000,45000,70000,45000,70000];
+            var month = [4,08,4,08,4,08,4,08,4,08,4,08,4,08,4,08,4,08];
+
+
+            for(var data in user ){
+                document.write(`<tr>`)
+                    document.write(`<td>${user[data]}</td><td>${dept[data]}</td><td>${desig[data]}</td><td>${salary[data]}</td><td>${month[data]}</td>`)
+            }
+
+        </script>
+
+    </table>
+    
+</body>
+</html>

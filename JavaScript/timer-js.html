@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CLock</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+        p{
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h2>Timer</h2>
+        <button onclick="startTime()">Start Time Now</button>
+        <button onclick="stopTime()">Stop Time Now</button>
+        <p id="w"></p> 
+    </div>
+
+    <script>
+        var i=0;
+        var time;
+        function startTime(){
+            document.getElementById("w").innerHTML=i++;
+            time = setTimeout(startTime,100)
+             
+
+        }
+        function stopTime(){
+            clearTimeout(time);
+        }
+    </script>
+    
+</body>
+</html>

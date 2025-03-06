@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-js-image </title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <form >
+    <input type="radio" name="Thar" value="Image">
+    <label  onclick="show_item(0)">Car</label>
+    <input type="radio" name="BMW" value="Image">
+    <label  onclick="show_item(1)">Bike</label>
+    <input type="radio" name="tablets" value="Image">
+    <label  onclick="show_item(2)">Medicine-Drugs</label>
+    <input type="radio" name="Butterfly-flower" value="Image">
+    <label  onclick="show_item(3)">Flowers</label>
+   </form>
+
+   <div class="image show">
+    <img src="car.jpg" alt="bike">
+
+   </div>
+
+   <div class="image">
+    <img src="bike.JPG" alt="bike">
+
+   </div>
+
+   <div class="image">
+    <img src="Drugs.jpg" alt="bike">
+
+   </div>
+
+   <div class="image">
+    <img src="flower.jpg" alt="bike">
+
+   </div>
+
+
+   <script>
+       function show_item(x)
+        {
+            var data = document.getElementsByClassName("image");
+            for(var abc in data){
+                data[abc].classList.remove("show");
+                data[x].classList.add("show");
+            }
+        }
+   </script>
+</body>
+</html>

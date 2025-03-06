@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: calibri;
+        }
+        .box{
+            width:200px;
+            height: 50px;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 10px 0;
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+
+
+   <script>
+
+    user ="<b>Shubh Verma</b>";
+    email= "<u>shubh@gamil.com</u>";
+    mobile = "6345455675";
+    address = "Noida";
+
+
+    var data = document.getElementsByClassName("box");
+    data[0].innerHTML = user;
+    data[1].innerHTML = email;
+    data[2].innerHTML = mobile;
+    data[3].innerHTML = address;
+
+
+
+    for (var i=0;i<data.length;i++){
+        data[i].style.color="orange";
+    }
+
+
+    
+
+
+    
+
+   </script>
+    
+</body>
+</html>

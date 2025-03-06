@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupee  Counter</title>
+    <link rel="stylesheet" href="css/bootstarp.min.css">
+</head>
+<body>
+    <h2>Rupee Counter</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Rupees</th>
+                <th>Qty</th>
+                <th>Total Rupees</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <td><input type="number"id="x1"></td>
+            <td><input type="number"id="x2" onkeyup="Rup()"></td>
+            <td><input type="number"id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="x1"></td>
+            <td><input type="number" id="x2" onkeyup="Rup()"></td>
+            <td><input type="number" id="x3"></td>
+        </tr>
+
+        <tr>
+            <td><input type="number"></td>
+            <td><input type="number" onkeyup="Rup()"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        
+
+
+
+        
+
+    </table>
+
+    <div >Grand Total=></div>
+
+
+    <script>
+
+        function Rup(){
+ 
+            var rupee,qty,Total;
+
+            
+        rupee= document.getElementById("x1").value;
+        qty = document.getElementById("x2").value;
+        Total =  rupee*qty;
+
+        document.getElementById("x3").value= Total;
+
+
+        }
+    </script>
+    
+</body>
+</html>

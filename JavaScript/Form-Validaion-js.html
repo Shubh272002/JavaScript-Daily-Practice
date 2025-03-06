@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form -validation</title>
+    <style>
+        span{
+            color:red;
+
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return FormValid()">
+        <input type="text" placeholder="Enter Name" id="fig">
+        <span></span>
+        <br><br>
+        <input type="text" placeholder="Enter  Mobile" id="mobile">
+        <span></span>
+        <br><br>
+        <input type="text" placeholder="Enter password" id="pass">
+        <span>
+
+        </span>      
+        <br><br>
+
+        <button>Submit</button>
+
+
+    </form>
+
+    <script>
+        function FormValid(){
+            var fig=document.getElementById("fig").value;
+            var mobile= document.getElementById("mobile").value;
+            var pass = document.getElementById("pass").value;
+            var error = document.getElementsByTagName("span");
+
+
+            if(!fig)
+            {
+                error[0].innerHTML="Enter Your Name";
+                return  false;
+            }
+            if(fig.search(/[A_Z a-z]/))
+            {
+                error[0].innerHTML="Only Alphabets ";
+                return false; 
+
+            }
+            else if(!mobile){
+                error[1].innerHTML= "Enter Mobile Number";
+                return false;
+            }
+            else if(mobile.search(/[0-9]/))
+
+            {
+                 error[1].innerHTML="Only Number Allow"
+                 return false; 
+            }
+            else if(mobile.length!=10){
+                error[1].innerHTML="Only 10 digit Number Allow";
+                return false; 
+            }
+            else if(pass){
+                error[2].innerHTML="Enter Password";
+                return false; 
+            }
+            else if(pass.length<5){
+                error[2].innerHTML="Should Be a Above of 5 Character";
+                return false;
+            }
+            else if(pass.search(/[A-Z]/)==-1){
+                error[2].innerHTML="One Letter SHould be Caps";
+                return false;
+            }
+         
+        }
+    </script>
+</body>
+</html>

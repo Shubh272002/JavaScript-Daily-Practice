@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Preview</title>
+</head>
+<body>
+    <input type="file" onchange="UploadImage(event)">
+    <img src="" alt="" width="200" id="abc"/>
+
+
+    <script>
+        function UploadImage(event){
+            var images=document.getElementById("abc");
+            images.src=URL.createObjectURL(event.target.files[0]);
+            
+        }
+    </script>
+</body>
+</html>

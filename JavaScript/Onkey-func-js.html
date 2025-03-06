@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmouse</title>
+    <link rel="stylesheet" href="css/bootstarp.min.css">
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fee Submit Application</h2>
+    <table border="1" >
+
+        <thead>
+            <tr>
+                <th>Rate</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tr>
+    <input type="text" placeholder="Enter Your Fee" id="x1" >
+    <input type="text" placeholder="Submit Your Fee" id="x2"  onkeyup="FeeApp() ">
+    <input type="text" placeholder="Due Your  Fee" id="x3">
+</tr>
+
+<tr>
+    <input type="text" placeholder="Enter Your Fee" id="x1" >
+    <input type="text" placeholder="Submit Your Fee" id="x2"  onkeyup="FeeApp() ">
+    <input type="text" placeholder="Due Your  Fee" id="x3">
+</tr>
+
+
+<tr>
+    <input type="text" placeholder="Enter Your Fee" id="x1" >
+    <input type="text" placeholder="Submit Your Fee" id="x2"  onkeyup="FeeApp() ">
+    <input type="text" placeholder="Due Your  Fee" id="x3">
+</tr>
+
+
+
+</table>
+
+
+    <script>
+
+        function FeeApp(){
+
+       
+
+        var fee, submitFee, dueFee, total ;
+
+        fee= document.getElementById("x1").value;
+        submitFee = document.getElementById("x2").value;
+        dueFee = fee * submitFee;
+
+        document.getElementById("x3").value= dueFee;
+    }
+    </script>
+    
+</body>
+</html>

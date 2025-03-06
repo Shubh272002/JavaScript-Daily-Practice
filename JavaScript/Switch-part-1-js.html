@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Day Number" id="dn">
+    <button onclick="getday()">Get Day</button>
+    <h2>Day Name:- <span id="w"></span></h2>
+</body>
+</html>
+
+
+<script>
+    `use strict`
+    function getday(){
+    var days,msg;
+days=Number(document.getElementById("dn").value) ;
+
+    
+    switch(days){
+        case 1:
+            msg="Sunday";
+        break;
+
+        case 2:
+            msg="Monday";
+            break;
+        case 3:
+            msg="Tuesday";
+            break;
+        case 4:
+            msg="Wednesday";
+            break;
+            
+        case 5:
+            msg="Friday";    
+            break;
+
+        case 6:
+            msg="Saturday";
+            
+            default:
+                msg="Invalide Day Number"
+                break;
+
+    }
+    document.getElementById("w").innerHTML = msg;
+
+}
+   
+</script>

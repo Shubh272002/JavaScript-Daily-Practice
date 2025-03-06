@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1-js</title>
+</head>
+<body>
+    <a onclick="change1()"><input type="radio" name="Car">Car</a>
+    <a onclick="change2()"><input type="radio" name="Car">Bike</a>
+    <a onclick="change3()"><input type="radio" name="Car">Drug</a>
+    <a onclick="change4()"><input type="radio" name="Car">Flowers</a>
+    <div id="changing_image"></div>
+
+
+    <script>
+        function change1(){
+            document.getElementById("changing_image").innerHTML='<img src=car.jpg>'
+        }
+
+        function change2(){
+            document.getElementById("changing_image").innerHTML='<img src=bike.JPG>'
+        }
+
+        function change3(){
+            document.getElementById("changing_image").innerHTML='<img src=Drugs.jpg>'
+        }
+
+        function change4(){
+            document.getElementById("changing_image").innerHTML='<img src=flower.jpg>'
+        }
+    </script>
+
+
+
+</body>
+</html>

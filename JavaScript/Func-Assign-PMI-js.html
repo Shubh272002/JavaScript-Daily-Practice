@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmouse</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PMI Calcualtor</h2>
+    <input type="text" placeholder="Enter Your vihicle"><br><br>
+    <input type="text" placeholder="Enter Your Vihicle Rupee" id="x1" ><br><br>
+    <input type="text" placeholder="Down Payment" id="x2"  onkeyup="FeeApp() "><br><br>
+    <input type="text" placeholder="Total Payment" id="x3"><br><br>
+    <input type="number" id="x4" placeholder="Enter Rate %"><br><br>
+    <input type="number" id="x5" onkeyup="FeeApp()" placeholder="Total Month"><br><br>
+    <input type="number" id="x6" placeholder="Per Month"><br><br>
+    
+   
+
+
+    <script>
+
+        function FeeApp(){
+
+       
+
+        var fee, submitFee, dueFee, total ,rate, total_month, per_month;
+
+        fee= document.getElementById("x1").value;
+        submitFee = document.getElementById("x2").value;
+        dueFee = fee - submitFee;
+        rate = document.getElementById("x4").value;
+        total_month = document.getElementById("x5").value;
+        per_month = rate/12,total_month*12,total;
+
+
+
+
+        document.getElementById("x3").value= dueFee;
+        document.get.getElementById("x6").value = per_month;
+    }
+    </script>
+    
+</body>
+</html>

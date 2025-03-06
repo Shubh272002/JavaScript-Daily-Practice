@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script src="Table-data.js"></script>
+</head>
+<body>
+    <h1>Search By Id</h1>
+    <input type="text" placeholder="Enter Your Id" id="user_id">
+    <button onclick="searchUser()">Search</button>
+
+
+    <table border="1" width="30%" align="center" cellspacing="0" cellpadding="10">
+        <tr>
+            <th width="10% ">Id</th>
+            <td></td>
+            <th rowspan="5"><img src="" width="100" id="image" alt=""></th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>Dept</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>Degis</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Salary</th>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+
+        function searchUser(){
+            var user_id = document.getElementById("user_id")    .value;
+            var store=document.getElementsByTagName("td");
+            var image = document.getElementByid("image");
+          var status=false;
+            for(var uid in userid){
+                if(userid[uid]==user_id){
+                   status= true;
+                   break;   
+                   
+                }
+               
+                
+            }
+            if(status){
+                // alert("Right User Id :");
+                store[0].innerHTML=userid[uid];
+                store[1].innerHTML=username[uid];
+                store[2].innerHTML=dept[uid];
+                store[3].innerHTML=degis[uid];
+                store[4].innerHTML=salary[uid];
+                image.src=image[uid];
+            }
+            else{
+                alert("Wrong User Id")
+            }
+        }
+    </script>
+</body>
+</html>

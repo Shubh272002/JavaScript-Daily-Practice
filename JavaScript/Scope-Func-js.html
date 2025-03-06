@@ -1,0 +1,21 @@
+<script>
+
+     var model = 2018;
+    function car(item){
+        var price  = 35000;
+        return`<p>Car ${item} Price ${price}</p> Model${model}`
+    }
+
+    function bike(item,color){
+        var price  = 20000;
+        return`<p>Bike ${item} Price ${price} and model${model}</p> `
+    }
+
+
+    var alto = car ("Alto i10");
+    var OD = car ("OD","lightgray")
+    var passion = bike("PassionPro","Blue");
+
+
+    document.write(alto,passion,OD);
+</script>

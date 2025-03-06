@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Name:-</h2>
+    <p></p>
+
+    <h2>Email:-</h2>
+    <p></p>
+
+    <h2>Mobile Number:-</h2>
+    <p></p>
+
+
+
+   <script>
+
+    var user,email,mobile;
+
+    user= "Shubh Verma";
+    email= "shubhverma@gmail.com";
+    mobile= "6334546463";
+
+
+
+    var data = document.getElementsByTagName("p");
+   data[0].innerHTML = user;
+   data[1].innerHTML = email;
+   data[2].innerHTML = mobile;
+
+
+   data[0].style.color="red";
+   data[1].style.color="orange";
+   data[2].style.color="maroon";
+
+
+    
+
+   </script>
+    
+</body>
+</html>

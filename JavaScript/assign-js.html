@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <script >
+        var  number, item,category,rate,qty,total,discount,discount_value,gross;
+
+number= prompt("Enter Invoice Number");
+item= prompt("Enter item Name");
+category= prompt("Enter category Name");
+rate= prompt("Enter rupee");
+qty= prompt("Enter qty");
+discount= prompt("Enter discount");
+
+
+total= rate*qty;
+discount_value = total*discount/100;
+gross = total-discount_value;
+
+document.write(`<p><b>Invoice-No</b> => ${number}</p>`);
+document.write(`<p><b>Item</b> => ${item}</p>`);
+document.write(`<p><b>Category</b> => ${category}</p>`);
+document.write(`<p><b>Rs</b> => ${rate}</p>`)
+document.write(`<p><b>Qty</b> => ${qty}</p>`)
+document.write(`<p><b>Discount</b> => ${discount}</p>`)
+document.write(`<p><b>Total</b> => ${total}</p>`)
+document.write(`<p><b>Discount-Value</b> => ${discount_value}</p>`)
+document.write(`<p><b>Gross</b> => ${gross}</p>`)
+
+
+    </script>
+</body>
+</html>
