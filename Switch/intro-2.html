@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Day number" id="dn">
+    <button onclick="getday()">Get Day</button>
+    <h2>Day Name:- <span id="w"></span></h2>
+</body>
+</html><script>
+    'use strict'
+    function getday()
+    {
+var days,msg;
+
+days=Number(document.getElementById("dn").value);
+switch(days)
+{
+    case 1:
+        msg="Sunday";
+        break;//else if
+    
+    case 2:
+        msg="Monday";
+        break;
+
+    case 3:
+        msg="Tuesday";
+        break;
+
+    case 4:
+        msg="Wednesday";
+        break;
+    
+        default :
+        msg="Invalide Day number";
+        break;
+}
+    document.getElementById("w").innerHTML=msg;
+   
+}
+</script>
