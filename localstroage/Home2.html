@@ -1,0 +1,9 @@
+<script>
+    var data = localStorage.getItem("userinfo");
+    //now convert string data in object 
+    var abc = JSON.parse(data)
+    console.log(typeof(data));
+    console.log(typeof(abc))
+
+    console.log(abc.name)
+</script>

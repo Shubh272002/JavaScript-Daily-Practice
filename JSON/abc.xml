@@ -1,0 +1,10 @@
+<emp>
+<name>Ram</name>
+<dept>Hr</dept>
+<desig>Manager</desig>
+<hobbies>
+    <hb1>Singing</hb1>
+     <hb2>Playing</hb2>
+      <hb3>Running</hb3>
+</hobbies>
+</emp>

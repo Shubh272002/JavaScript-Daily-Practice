@@ -1,0 +1,11 @@
+<script>
+    var emp={
+        "name":"Ram",
+        "Dept":"Hr",
+        "Desig":"Manager",
+        "Salary":34500
+    }
+//convert string in object before pass data by localStorage
+var data = JSON.stringify(emp);
+    localStorage.setItem("userinfo",data);
+</script>
