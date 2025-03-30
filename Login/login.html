@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+ <h2>User Login</h2>
+ <input type="text" placeholder="UserName" id="user"><br><br>
+ <input type="password" placeholder="Password" id="pass"><br><br>
+ <button onclick="LoginUser()">Login</button>   
+
+ <script>
+    function LoginUser(){
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+localStorage.setItem("username",user);
+        if(user=="Ram@123" && pass=="1234"){
+            window.location.href="Welcome.html"
+        }
+
+        else{
+            alert("Wrong User");
+        }
+    }
+ </script>
+</body>
+</html>
