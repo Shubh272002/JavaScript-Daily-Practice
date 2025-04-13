@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p>PinCode</p>
+    <p>Fax </p>
+
+    <script>
+        var user,email,mobile;
+        //data set
+        user="<b>Ram Kumar</b>";
+        email="<u>ramk@gmail.com</u>";
+        mobile="878797979898";
+        address="Noida";
+
+        //data get
+        var data = document.getElementsByTagName("p");
+        data[0].innerHTML=user;
+        data[1].innerHTML=email;
+        data[2].innerHTML=mobile;
+        data[3].innerHTML=address
+
+        //formatting
+        for(var i=0;i<data.length;i++){
+            data[i].style.color="orange"
+        }
+    </script>
+
+</body>
+</html>
