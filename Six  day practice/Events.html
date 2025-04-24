@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="abc()">Get Name</button>
+    <h2>UserName:- <span id="w">Rav Kumar</span></h2>
+
+
+    <script>
+        //create function
+        function abc()
+        {
+        var user="Ram Kumar";
+        var data =document.getElementById("w");
+        data.innerHTML=user;
+        }
+
+        //invoke function
+        //abc();
+    </script>
+</body>
+</html>

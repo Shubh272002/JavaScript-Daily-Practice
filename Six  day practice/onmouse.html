@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+ 
+  <!-- <button onmouseover="abc()" onmouseout="remove()">See Example</button> -->
+  <button onmouseover="abc(0)" onmouseout="abc(1)">See Example</button>
+    <h2>UserName:- <span id="w">Admin Name</span></h2>
+
+
+    <script>
+        //create function
+        function abc(x)
+        {
+            if(x==0)
+        {
+        document.getElementById("w").innerHTML="Ram"
+        }
+
+        if(x==1)
+        {
+        document.getElementById("w").innerHTML="Admin Name"
+        }
+        }
+
+        /*
+        function remove()
+        {
+        document.getElementById("w").innerHTML="Admin Name"
+        }
+        */
+
+  
+    </script>
+</body>
+</html>
