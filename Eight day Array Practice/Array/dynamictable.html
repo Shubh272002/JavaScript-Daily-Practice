@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="50%" align="center">
+        <tr>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Desig</th>
+            <th>Salary</th>
+        </tr>
+        <script>
+        var user=["Ram","Karan","Mohan"];
+        var dept=["Sales","Finishing","Accounts"];
+        var desig=["Manager","Supervisor","Cleark"];
+        var salary=[50000,25000,35000];
+
+        for(var data in user){
+            document.write(`<tr>`)
+                document.write(`<td>${user[data]}</td><td>${dept[data]}</td><td>${desig[data]}</td><td>${salary[data]}</td>`)
+        }
+        </script>
+    </table>
+
+
+</body>
+</html>

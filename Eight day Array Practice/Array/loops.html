@@ -1,0 +1,26 @@
+<script>
+var users=["Ram","Mohan","Karan","Sures"];
+var dept=["Sales","Production","Finishing","Accounts"]
+
+//core loop
+/*
+var len = users.length;
+
+for(var i=0;i<len;i++){
+    document.write(users[i]+"<br>")
+    document.write(dept[i]+"<br><br>")
+}
+*/
+//predefine loop
+/*
+for(var i of users){
+    document.write(i)
+}
+*/
+
+for(var data in users){
+
+    document.write(users[data]+"<br>")
+    document.write(dept[data]+"<br><br>")
+}
+</script>
