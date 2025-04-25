@@ -1,0 +1,30 @@
+ <html>
+ <head>
+ <title> TagDOM </title>
+ </head>
+ <body>
+ <h2> Name</h2>
+ <h2> Email</h2>
+ <h2> Mobile</h2>
+ 
+ 
+ <script>
+ 'use strict'
+ 
+  var user,email,mobile;
+ 
+ user="Ankit Kumar";
+ email="ankit@gmail.com";
+ mobile="897979789";
+ /*
+ document.getElementsByTagName("p")[0].innerHTML=user;
+ document.getElementsByTagName("p")[1].innerHTML=email;
+ document.getElementsByTagName("p")[2].innerHTML=mobile;
+ */
+ 
+ var store=document.getElementsByTagName("h2");
+ store[0].innerHTML=user;
+ store[1].innerHTML=email;
+ store[2].innerHTML=mobile;
+ </script>
+ </body></html>
