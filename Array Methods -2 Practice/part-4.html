@@ -1,0 +1,14 @@
+<script>
+    var age=[12,15,17,19,20,25,30,25,24];
+
+    function checkAge(x){
+        return x<20
+    }
+
+    console.log("All below of 20?", age.every(checkAge))
+    console.log("Some  below of 20?", age.some(checkAge))
+    console.log("Show below of 20?", age.filter(checkAge))
+    console.log("First Index below of 20?", age.findIndex(checkAge))
+    console.log("First Age below of 20?", age.find(checkAge))
+
+</script>
