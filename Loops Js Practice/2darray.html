@@ -1,0 +1,38 @@
+<table border="1" width="50%" align="center">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Desig</th>
+    </tr>
+
+
+
+
+<script>
+    var emp=[
+    [120,"Ram","Sales","Manager"],
+    [121,"Mohan","Sales","Manager"],
+    [122,"Karan","Sales","Manager"],
+    [123,"Suresh","Sales","Manager"],
+    [124,"Harish","Sales","Manager"],
+    [125,"Kapil","Sales","Manager"],
+    [126,"Lalit","Sales","Manager"],
+    ];
+
+    /*
+    var len = emp.length;
+    for(var i=0;i<len;i++){
+        document.write("<tr>")
+        for(var x=0;x<=3;x++){
+
+            document.write(`<td>${emp[i][x]}</td>`)
+        }
+    }
+    */
+
+   emp.map((value,index)=>{
+    document.write("<tr>")
+        document.write(`<td>${value[0]}</td><td>${value[1]}</td><td>${value[2]}</td><td>${value[3]}</td>`)
+   })
+</script>
