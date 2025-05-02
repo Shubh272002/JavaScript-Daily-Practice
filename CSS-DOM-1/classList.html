@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+
+        .abc{
+            font-family: calibri;
+            color:red;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(1,1,1,.7);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeFormat(0)">Add</button>
+    <button onclick="changeFormat(1)">Remove</button>
+    <button onclick="changeFormat(2)">Toggle</button>
+    
+    <h1 align="center" id="x">Css class list</h1>
+
+    <script>
+        function changeFormat(x)
+        {
+var data = document.getElementById("x");
+if(x==0)
+        {
+            data.classList.add("abc")
+        }
+
+        if(x==1)
+        {
+            data.classList.remove("abc")
+        }
+
+        if(x==2)
+        {
+            data.classList.toggle("abc")
+        }
+        }
+    </script>
+</body>
+</html>

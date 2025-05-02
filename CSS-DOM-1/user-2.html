@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <select name="" id="x" onchange="fontChange()">
+    <option value="">Choose Font</option>
+    <script>
+        var font=["Calibri","Comics sans ms","Arial","Arial black"];
+        for(var data in font)
+    {
+        document.write(`<option value=${font[data]}>${font[data]}</option>`);
+    }
+    </script>
+   </select>
+    <h1 align="center" id="x1">Computer Education</h1>
+    
+
+    <script>
+        function fontChange()
+        {
+  
+        var fonts = document.getElementById("x").value;
+
+        //Apply
+        document.getElementById("x1").style.fontFamily=fonts;
+       
+        
+        }
+    </script>
+</body>
+</html>

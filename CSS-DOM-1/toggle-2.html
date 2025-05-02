@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+
+        .abc{
+            font-family: calibri;
+            color:red;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(1,1,1,.7);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="changeFormat()">Toggle</button>
+    
+    <h1 align="center" id="x">Css class list</h1>
+
+    <script>
+        var x=0;//scope 
+        function changeFormat()
+        {
+        var data = document.getElementById("x");
+        if(x==0)
+        {
+            data.style.color="red";
+        }
+
+        if(x==1)
+        {
+            data.style.color="blue";
+        }
+        x++;
+        if(x==2)
+        {
+            x=0;
+        }
+
+ }
+    </script>
+</body>
+</html>

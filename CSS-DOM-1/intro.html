@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="changeFormat()">Change Color</button>
+    <h1 align="center" id="x">Computer Education</h1>
+    
+
+    <script>
+        function changeFormat()
+        {
+        var txtcolor="red";
+        var txtfont ="calibri"
+
+        //Apply
+       var data = document.getElementById("x");
+       data.style.color=txtcolor;
+       data.style.fontFamily=txtfont;
+        
+        }
+    </script>
+</body>
+</html>
