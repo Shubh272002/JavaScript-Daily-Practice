@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:0;
+            padding:0;
+        }
+
+        .container{
+            width:80%;
+            height:500px;
+            margin:0 10%;
+            padding:20px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left{
+            width:15%;
+            height:500px;
+            background:black;
+        }
+
+        .menu{
+            width:100%;
+            padding:10px 0;
+            color:white;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+
+        .right{
+            width:85%;
+            height:500px;
+        }
+        .content{
+            width:100%;
+            height:100%;
+            background:#f1f1f1;
+            padding:20px 5%;
+            display: none;
+            animation:mv 1s;
+        }
+
+        @keyframes mv{
+            from{
+                transform:scale(0,0);
+            }
+
+            to{
+                transform:scale(1,1)
+            }
+        }
+
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <div class="menu" onclick="show_hide_tabs(0)">Home</div>
+                <div class="menu" onclick="show_hide_tabs(1)">HTML</div>
+                <div class="menu" onclick="show_hide_tabs(2)">CSS</div>
+                <div class="menu" onclick="show_hide_tabs(3)">JavaScript</div>
+                <div class="menu" onclick="show_hide_tabs(4)">Jquery</div>
+                <div class="menu" onclick="show_hide_tabs(5)">React</div>
+                <div class="menu" onclick="show_hide_tabs(6)">Angular</div>
+         
+            </div>
+            <div class="right">
+                <div class="content show">
+                    <h1>Our Courses</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, quasi! Quibusdam rem laboriosam reiciendis voluptates aspernatur consectetur. Autem assumenda modi ducimus quidem, consequatur quis, aut ipsa id dolore dolorem ratione.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, quasi! Quibusdam rem laboriosam reiciendis voluptates aspernatur consectetur. Autem assumenda modi ducimus quidem, consequatur quis, aut ipsa id dolore dolorem ratione.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Jquery</li>
+                    </ul>
+                </div><!-----content-->
+
+                <div class="content">
+                    <h1>HTML</h1>
+         
+                    <ul>
+                        <li>Heading</li>
+                        <li>Tables</li>
+                        <li>Form</li>
+                        <li>Links</li>
+                    </ul>
+                </div><!-----content-->
+
+                <div class="content">
+                    <h1>CSS/CSS3</h1>
+                   
+                    <ul>
+                        <li>Box Model</li>
+                        <li>Position</li>
+                        <li>Selectors</li>
+                        <li>Adv. Selectors</li>
+                    </ul>
+                </div><!-----content-->
+
+                <div class="content">
+                    <h1>JavaScript</h1>
+                   
+                    <ul>
+                        <li>Loops</li>
+                        <li>Array</li>
+                        <li>Operators</li>
+                        <li>Data types</li>
+                    </ul>
+                </div><!-----content-->
+                <div class="content">
+                    <h1>Jquery</h1>
+                   
+                    <ul>
+                        <li>Set Methods</li>
+                        <li>Get Methods</li>
+                        <li>Show-Hides</li>
+                        <li>Toggles</li>
+                    </ul>
+                </div><!-----content-->
+
+                <div class="content">
+                    <h1>React</h1>
+                   
+                    <ul>
+                        <li>Set Methods</li>
+                        <li>Get Methods</li>
+                        <li>Show-Hides</li>
+                        <li>Toggles</li>
+                    </ul>
+                </div><!-----content-->
+
+                <div class="content">
+                    <h1>Angular</h1>
+                   
+                    <ul>
+                        <li>Set Methods</li>
+                        <li>Get Methods</li>
+                        <li>Show-Hides</li>
+                        <li>Toggles</li>
+                    </ul>
+                </div><!-----content-->
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function show_hide_tabs(x)
+        {
+            var data = document.getElementsByClassName("content");
+            for(var abc in data){
+                data[abc].classList.remove("show");
+                data[x].classList.add("show");
+            }
+
+            /*
+            data[0].classList.remove("show");
+            data[1].classList.remove("show");
+            data[2].classList.remove("show");
+            data[3].classList.remove("show");
+            data[4].classList.remove("show");
+           
+            
+            if(x==0){
+                data[0].classList.add("show");
+            }
+
+            if(x==1){
+                data[1].classList.add("show");
+            }
+
+            if(x==2){
+                data[2].classList.add("show");
+            }
+
+            if(x==3){
+                data[3].classList.add("show");
+            }
+
+            if(x==4){
+                data[4].classList.add("show");
+            }
+                */
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:calibri;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+
+        .container{
+            width:70%;
+            margin:0 15%;
+            padding:5%;
+        }
+
+        .heading{
+            font-size:3em;
+            font-weight: bold;
+            margin:20px 0;
+        }
+        .subjects{
+            width:100%;
+            margin:10px 0;
+        }
+        .subHeading{
+            width:100%;
+            background:black;
+            color:white;
+            font-size:1.5em;
+            padding:5px 20px;
+            cursor: pointer;
+        }
+
+        .content{
+            width:100%;
+            background:#f1f1f1;
+            height:0;
+            overflow: hidden;
+            transition:.5s;
+        }
+
+        p{
+            padding:20px;
+            font-size:14pt;
+            line-height:1.5;
+        }
+
+        .show{
+            height:170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">FAQ</div>
+        <div class="subjects">
+            <div class="subHeading" onclick="accordion(0)">Question One</div>
+            <div class="content show">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem nam incidunt expedita dolorum ut fugit tenetur recusandae maiores iure? Saepe magnam, laudantium magni ratione sint vel ipsa labore voluptatibus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae, nam iusto fugiat temporibus delectus, ipsam blanditiis quae, esse itaque corrupti doloremque. Ea voluptatum ad fugit labore quaerat aspernatur cupiditate?
+                </p>
+            </div>
+        </div><!-----subjects-->
+
+        <div class="subjects">
+            <div class="subHeading" onclick="accordion(1)">Question Two</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem nam incidunt expedita dolorum ut fugit tenetur recusandae maiores iure? Saepe magnam, laudantium magni ratione sint vel ipsa labore voluptatibus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae, nam iusto fugiat temporibus delectus, ipsam blanditiis quae, esse itaque corrupti doloremque. Ea voluptatum ad fugit labore quaerat aspernatur cupiditate?
+                </p>
+            </div>
+        </div><!-----subjects-->
+
+        <div class="subjects">
+            <div class="subHeading" onclick="accordion(2)">Question Three</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem nam incidunt expedita dolorum ut fugit tenetur recusandae maiores iure? Saepe magnam, laudantium magni ratione sint vel ipsa labore voluptatibus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae, nam iusto fugiat temporibus delectus, ipsam blanditiis quae, esse itaque corrupti doloremque. Ea voluptatum ad fugit labore quaerat aspernatur cupiditate?
+                </p>
+            </div>
+        </div><!-----subjects-->
+
+        <div class="subjects">
+            <div class="subHeading" onclick="accordion(3)">Question Four</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptatem nam incidunt expedita dolorum ut fugit tenetur recusandae maiores iure? Saepe magnam, laudantium magni ratione sint vel ipsa labore voluptatibus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae, nam iusto fugiat temporibus delectus, ipsam blanditiis quae, esse itaque corrupti doloremque. Ea voluptatum ad fugit labore quaerat aspernatur cupiditate?
+                </p>
+            </div>
+        </div><!-----subjects-->
+    </div>
+
+    <script>
+             function accordion(x)
+        {
+            var data = document.getElementsByClassName("content");
+            for(var abc in data){
+                data[abc].classList.remove("show");
+                data[x].classList.add("show");
+            }
+        }
+    </script>
+</body>
+</html>
