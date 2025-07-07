@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Username:-</h2> -->
+    <p ></p>
+
+
+    <!-- <h2>Email</h2> -->
+    <p ></p>
+
+
+    <!-- <h2>Mobile Number</h2> -->
+    <!-- <input type="text" placeholder="Mobile Number" id="x3"/> -->
+     <p></p>
+
+     <p></p>
+<p></p>
+
+    <script>
+
+        var user,email,mobile;
+        user="Shubh Verma";
+        email="shubhverma@gmail.com";
+        mobile="9097886667";
+        address="Noida";
+        pincode="223223"
+
+        // document.getElementById("x1").innerHTML=user;
+        // document.getElementById("x2").innerText=email;
+        // document.getElementById("x3").value=mobile;
+
+        var data = document.getElementsByTagName("p");
+        data[0].innerHTML=user;
+        data[1].innerHTML=email;
+        data[2].innerHTML=mobile;
+        data[3].innerHTML=address;
+        data[4].innerHTML=pincode;
+        
+ 
+        // data[0].style.color="green";
+        // data[1].style.color="green";
+        // data[2].style.color="green";
+        // data[3].style.color="green";
+
+
+         for(var i=0;i<data.length;i++ ){
+            data[i].style.color="maroon"
+         }
+    </script>
+    
+</body>
+</html>
