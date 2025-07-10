@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript</title>
+    <style>
+        *{
+            font-family: calibri;   
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholdedr="Enter Color Name"  id="clr" onkeyup="changeColor()">
+
+    <h1 align="center" id="x"> Shubh With JavaScript Code Learn Education</h1>
+
+    <script>
+        function changeColor(){
+            var color = document.getElementById("clr").value;
+            document.getElementById("x").style.color=color;
+        }
+    </script>
+    
+</body>
+</html>
