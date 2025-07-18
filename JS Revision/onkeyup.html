@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fee Submit Application</h2>
+    <input type="text" placeholder="Enter Fee" id="x1"><br><br>
+    <input type="text" placeholder="Submit fee" id="x2" onkeyup="FeeApp()"><br><br>
+    <input type="text" placeholder="Due fee" id="x3"><br><br>
+
+  
+
+
+
+
+    <script>
+
+        function FeeApp()
+{
+        var fee,submitFee,dueFee,total;
+
+        fee=document.getElementById("x1").value;
+        submitFee=document.getElementById("x2").value;
+        dueFee = fee-submitFee;
+
+        docment.getElementById("x3").value=dueFee;
+}
+
+
+   
+
+    </script>
+    
+</body>
+</html>

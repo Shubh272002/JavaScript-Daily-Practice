@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fee Submit Application</h2>
+    <select name="" id="ab" onchange="FeeApp()">
+        <option value="">Choose State </option>
+        <option value="S1">Uttar Pradesh</option>
+        <option value="S2">Delhi</option>
+        <option value="S3">Panjab</option>
+
+
+    </select>
+
+    <p id="x"></p>
+  
+
+
+
+
+    <script>
+
+        function FeeApp()
+{
+    var state
+
+    state = document.getElementById("ab").value;
+
+    if(state=="S1"){
+        msg="CM is Yogi Ji"
+    }
+
+     if(state=="S2"){
+        msg="CM is Rekha Gupta"
+    }
+
+     if(state=="S3"){
+        msg="CM is Bhagwanth das"
+    }
+
+    document.getElementById("x").innerHTML=msg;
+
+
+
+
+}
+     
+
+
+   
+
+    </script>
+    
+</body>
+</html>

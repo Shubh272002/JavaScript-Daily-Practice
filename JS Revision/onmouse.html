@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            font-family: calibri;
+        }
+    </style>
+</head>
+<body>
+  
+    <button onmouseover="abc(0)" onmouseout="abc(1)">Get Name</button>
+    <h2>UserName:- <span id="w"></span></h2>
+
+
+
+
+    <script>
+    
+    function abc(x)
+    {
+        if(x==0)
+    {
+       document.getElementById("w").innerHTML="Shubh Verma";
+    }
+    if(x==1)
+    {
+        document.getElementById("w").innerHTML="Admin Name"
+    }
+}
+
+    // function remove(){
+    //     document.getElementById("w").innerHTML=""
+    // }
+
+    // abc();
+
+
+
+
+    </script>
+    
+</body>
+</html>
